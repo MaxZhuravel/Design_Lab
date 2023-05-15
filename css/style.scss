@@ -1,0 +1,230 @@
+@import 'variables';
+
+body {
+  font-family: $font;
+  color: $font-color;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.intro {
+  background: url(../img/header-bg.png);
+  color: #ffffff;
+  &__title {
+    text-transform: uppercase;
+    font-size: 54px;
+    font-weight: 700;
+    letter-spacing: 8.62px;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    max-width: 580px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.9px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 240px;
+  }
+  &__container {
+    height: 1072px;
+    padding: 285px 0 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 165px;
+  }
+  &__logo {
+    margin-bottom: 90px;
+    width: 67px;
+    height: 67px;
+  }
+}
+
+.logo {
+  background: url(../img/logo.svg) center no-repeat;
+  background-size: contain;
+}
+
+.mouse {
+  background: url(../img/scroll.svg);
+  width: 23px;
+  height: 37px;
+}
+
+.about {
+  color: #3c3c3c;
+  margin-bottom: 160px;
+  &__text {
+    max-width: 553px;
+    padding: 30px 0 29px;
+    p {
+      max-width: 450px;
+      padding: 25px 0 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+.field {
+  text-align: center;
+  &_dark {
+    border-right: solid 2px #3c3c3c;
+    border-left: solid 2px #3c3c3c;
+    border-bottom: solid 2px #3c3c3c;
+  }
+  &_white {
+    border-right: solid 2px #ffffff;
+    border-left: solid 2px #ffffff;
+    border-bottom: solid 2px #ffffff;
+  }
+  &__text {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 auto;
+  }
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 8.95px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services {
+  background: url(../img/services-bg.jpg.png) no-repeat;
+  background-size: cover;
+  padding: 128px 0 109px;
+  color: #ffffff;
+  margin-bottom: 119px;
+  &__text {
+    max-width: 544px;
+    padding: 45px 0 30px;
+  }
+}
+
+.field-title {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -16px;
+  }
+  &__line {
+    height: 2px;
+    width: 27%;
+    &_dark {
+      background: #3c3c3c;
+    }
+    &_white {
+      background: #ffffff;
+    }
+  }
+  &__name {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.item {
+  margin-bottom: 95px;
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5.26px;
+    margin-bottom: 33px;
+  }
+  &__img {
+    margin-bottom: 35px;
+  }
+}
+.what {
+  &__body {
+    margin: 120px auto 0px;
+    max-width: 545px;
+  }
+  &_container {
+    margin-bottom: 114px;
+  }
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+  margin-bottom: 138px;
+  &__item {
+    position: relative;
+  }
+  &__title {
+    z-index: 1;
+    bottom: 15.5%;
+    left: 3.5%;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 8.95px;
+    position: absolute;
+  }
+}
+
+.contact {
+  margin-bottom: 63px;
+  &__text {
+    max-width: 543px;
+    margin-bottom: 42px;
+    margin-top: 40px;
+  }
+  &__button {
+    margin: 0 auto 50px;
+  }
+}
+.button {
+  width: 395px;
+  background: $color-button;
+  height: 58px;
+  a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.54px;
+    line-height: 58px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 30px;
+  }
+  &__logo {
+    width: 37px;
+    height: 39px;
+    filter: invert(87%) sepia(1%) saturate(1030%) hue-rotate(194deg)
+      brightness(108%) contrast(105%);
+  }
+}
